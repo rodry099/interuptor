@@ -366,9 +366,9 @@ F 3 "~" H 5800 3850 50  0001 C CNN
 	1    5800 3850
 	1    0    0    -1  
 $EndComp
-Text GLabel 5750 5250 0    50   Input ~ 0
-Relay_1
 Text GLabel 5750 5350 0    50   Input ~ 0
+Relay_1
+Text GLabel 5750 5250 0    50   Input ~ 0
 Relay_2
 Text GLabel 4300 4150 3    50   Input ~ 0
 Relay_1
@@ -613,4 +613,5 @@ Text GLabel 5650 5450 0    50   Input ~ 0
 int_2
 Wire Wire Line
 	5650 5450 5900 5450
+NoConn ~ 8050 5100
 $EndSCHEMATC
