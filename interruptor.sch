@@ -366,9 +366,9 @@ F 3 "~" H 5800 3850 50  0001 C CNN
 	1    5800 3850
 	1    0    0    -1  
 $EndComp
-Text GLabel 5750 5350 0    50   Input ~ 0
-Relay_1
 Text GLabel 5750 5250 0    50   Input ~ 0
+Relay_1
+Text GLabel 5500 5150 0    50   Input ~ 0
 Relay_2
 Text GLabel 4300 4150 3    50   Input ~ 0
 Relay_1
@@ -492,7 +492,7 @@ Wire Wire Line
 	6100 2800 6100 2950
 Wire Wire Line
 	5800 2450 5800 2800
-Text GLabel 5500 5150 0    50   Input ~ 0
+Text GLabel 5750 5350 0    50   Input ~ 0
 int_1
 Connection ~ 6800 6050
 $Comp
