@@ -1,3 +1,9 @@
 (sym_lib_table
-  (lib (name interruptor-rescue)(type Legacy)(uri ${KIPRJMOD}/interruptor-rescue.lib)(options "")(descr ""))
+  (lib (name SRD-05VDC-SL-C)(type Legacy)(uri /media/Datos/Kicad_libs/relays/SRD-05VDC-SL-C.lib)(options "")(descr ""))
+  (lib (name HLK-PM01)(type Legacy)(uri /media/Datos/Kicad_libs/hlk-pm01/HLK-PM01.lib)(options "")(descr ""))
+  (lib (name ESP8266)(type Legacy)(uri ${ESP8266}/ESP8266.lib)(options "")(descr ""))
+  (lib (name interruptorRev2-rescue)(type Legacy)(uri ${KIPRJMOD}/interruptorRev2-rescue.lib)(options "")(descr ""))
+  (lib (name optoacopladores)(type Legacy)(uri /media/Datos/Kicad_libs/MiLibreria/Symbols/optoacopladores.lib)(options "")(descr ""))
+  (lib (name pn2222a)(type Legacy)(uri /media/Datos/Kicad_libs/MiLibreria/Symbols/pn2222a.lib)(options "")(descr ""))
+  (lib (name ACS712)(type Legacy)(uri /media/Datos/Kicad_libs/Acs712/ACS712.lib)(options "")(descr ""))
 )
