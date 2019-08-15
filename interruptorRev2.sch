@@ -30,21 +30,10 @@ NoConn ~ 5900 4950
 Wire Wire Line
 	5500 4250 6800 4250
 $Comp
-L interruptorRev2-rescue:Conn_01x03_Female-RESCUE-termostato-termostato-rescue-interruptor-rescue J2
-U 1 1 5A3E9536
-P 7100 3900
-F 0 "J2" H 7100 4100 50  0000 C CNN
-F 1 "tx/rx" H 7100 3700 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7100 3900 50  0001 C CNN
-F 3 "" H 7100 3900 50  0001 C CNN
-	1    7100 3900
-	0    -1   -1   0   
-$EndComp
-$Comp
-L interruptorRev2-rescue:GND-RESCUE-termostato-termostato-rescue-interruptor-rescue #PWR0101
+L interruptorRev2-rescue:GND-RESCUE-termostato-termostato-rescue-interruptor-rescue #PWR?
 U 1 1 5A3E96C3
 P 6800 6250
-F 0 "#PWR0101" H 6800 6000 50  0001 C CNN
+F 0 "#PWR?" H 6800 6000 50  0001 C CNN
 F 1 "GND" H 6800 6100 50  0000 C CNN
 F 2 "" H 6800 6250 50  0001 C CNN
 F 3 "" H 6800 6250 50  0001 C CNN
@@ -52,23 +41,23 @@ F 3 "" H 6800 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L interruptorRev2-rescue:GND-RESCUE-termostato-termostato-rescue-interruptor-rescue #PWR0102
+L interruptorRev2-rescue:GND-RESCUE-termostato-termostato-rescue-interruptor-rescue #PWR?
 U 1 1 5A3E96E1
-P 7200 4150
-F 0 "#PWR0102" H 7200 3900 50  0001 C CNN
-F 1 "GND" H 7200 4000 50  0000 C CNN
-F 2 "" H 7200 4150 50  0001 C CNN
-F 3 "" H 7200 4150 50  0001 C CNN
-	1    7200 4150
+P 6900 4150
+F 0 "#PWR?" H 6900 3900 50  0001 C CNN
+F 1 "GND" H 6900 4000 50  0000 C CNN
+F 2 "" H 6900 4150 50  0001 C CNN
+F 3 "" H 6900 4150 50  0001 C CNN
+	1    6900 4150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	6800 6050 6800 6250
 $Comp
-L interruptorRev2-rescue:GND-RESCUE-termostato-termostato-rescue-interruptor-rescue #PWR0103
+L interruptorRev2-rescue:GND-RESCUE-termostato-termostato-rescue-interruptor-rescue #PWR?
 U 1 1 5A3E97AE
 P 3750 5300
-F 0 "#PWR0103" H 3750 5050 50  0001 C CNN
+F 0 "#PWR?" H 3750 5050 50  0001 C CNN
 F 1 "GND" H 3750 5150 50  0000 C CNN
 F 2 "" H 3750 5300 50  0001 C CNN
 F 3 "" H 3750 5300 50  0001 C CNN
@@ -155,10 +144,10 @@ Wire Wire Line
 	3750 5150 3750 5300
 Connection ~ 3750 4750
 $Comp
-L interruptorRev2-rescue:GND-RESCUE-termostato-termostato-rescue-interruptor-rescue #PWR0109
+L interruptorRev2-rescue:GND-RESCUE-termostato-termostato-rescue-interruptor-rescue #PWR?
 U 1 1 5CD36044
 P 4700 3850
-F 0 "#PWR0109" H 4700 3600 50  0001 C CNN
+F 0 "#PWR?" H 4700 3600 50  0001 C CNN
 F 1 "GND" H 4700 3700 50  0000 C CNN
 F 2 "" H 4700 3850 50  0001 C CNN
 F 3 "" H 4700 3850 50  0001 C CNN
@@ -166,10 +155,10 @@ F 3 "" H 4700 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L interruptorRev2-rescue:GND-RESCUE-termostato-termostato-rescue-interruptor-rescue #PWR0110
+L interruptorRev2-rescue:GND-RESCUE-termostato-termostato-rescue-interruptor-rescue #PWR?
 U 1 1 5CD368F3
 P 6200 3750
-F 0 "#PWR0110" H 6200 3500 50  0001 C CNN
+F 0 "#PWR?" H 6200 3500 50  0001 C CNN
 F 1 "GND" H 6200 3600 50  0000 C CNN
 F 2 "" H 6200 3750 50  0001 C CNN
 F 3 "" H 6200 3750 50  0001 C CNN
@@ -283,8 +272,6 @@ Wire Wire Line
 Wire Wire Line
 	7100 4350 7800 4350
 Wire Wire Line
-	7200 4100 7200 4150
-Wire Wire Line
 	5650 4100 5800 4100
 Wire Wire Line
 	5800 4100 5800 4000
@@ -342,10 +329,10 @@ int_1
 Wire Wire Line
 	4350 6550 4350 6200
 $Comp
-L interruptorRev2-rescue:GND-RESCUE-termostato-termostato-rescue-interruptor-rescue #PWR01
+L interruptorRev2-rescue:GND-RESCUE-termostato-termostato-rescue-interruptor-rescue #PWR?
 U 1 1 5CDD4154
 P 4450 6300
-F 0 "#PWR01" H 4450 6050 50  0001 C CNN
+F 0 "#PWR?" H 4450 6050 50  0001 C CNN
 F 1 "GND" H 4450 6150 50  0000 C CNN
 F 2 "" H 4450 6300 50  0001 C CNN
 F 3 "" H 4450 6300 50  0001 C CNN
@@ -365,25 +352,14 @@ vcc
 Wire Wire Line
 	4250 6350 4250 6200
 $Comp
-L interruptorRev2-rescue:GND-RESCUE-termostato-termostato-rescue-interruptor-rescue #PWR03
+L interruptorRev2-rescue:GND-RESCUE-termostato-termostato-rescue-interruptor-rescue #PWR?
 U 1 1 5CDD4406
 P 9250 5250
-F 0 "#PWR03" H 9250 5000 50  0001 C CNN
+F 0 "#PWR?" H 9250 5000 50  0001 C CNN
 F 1 "GND" H 9250 5100 50  0000 C CNN
 F 2 "" H 9250 5250 50  0001 C CNN
 F 3 "" H 9250 5250 50  0001 C CNN
 	1    9250 5250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L interruptorRev2-rescue:Conn_01x03_Female-RESCUE-termostato-termostato-rescue-interruptor-rescue J7
-U 1 1 5CDDC706
-P 9000 4900
-F 0 "J7" H 9000 5100 50  0000 C CNN
-F 1 "switch" H 8900 4700 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9000 4900 50  0001 C CNN
-F 3 "" H 9000 4900 50  0001 C CNN
-	1    9000 4900
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -408,10 +384,10 @@ int_2
 Wire Wire Line
 	5100 6550 5100 6200
 $Comp
-L interruptorRev2-rescue:GND-RESCUE-termostato-termostato-rescue-interruptor-rescue #PWR02
+L interruptorRev2-rescue:GND-RESCUE-termostato-termostato-rescue-interruptor-rescue #PWR?
 U 1 1 5CDD93E1
 P 5200 6300
-F 0 "#PWR02" H 5200 6050 50  0001 C CNN
+F 0 "#PWR?" H 5200 6050 50  0001 C CNN
 F 1 "GND" H 5200 6150 50  0000 C CNN
 F 2 "" H 5200 6300 50  0001 C CNN
 F 3 "" H 5200 6300 50  0001 C CNN
@@ -428,7 +404,6 @@ Text GLabel 5650 5450 0    50   Input ~ 0
 int_2
 Wire Wire Line
 	5650 5450 5900 5450
-NoConn ~ 8900 5100
 Wire Wire Line
 	7700 5250 9000 5250
 Wire Wire Line
@@ -553,4 +528,31 @@ Wire Wire Line
 	5150 1800 5150 2450
 Text GLabel 3950 4750 2    50   Input ~ 0
 vcc
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 5D55AD53
+P 6900 3900
+F 0 "J2" V 6866 3612 50  0000 R CNN
+F 1 "Conn_01x04" V 6775 3612 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6900 3900 50  0001 C CNN
+F 3 "~" H 6900 3900 50  0001 C CNN
+	1    6900 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6900 4100 6900 4150
+Wire Wire Line
+	6800 4100 6800 4250
+Connection ~ 6800 4250
+$Comp
+L Connector_Generic:Conn_01x02 J7
+U 1 1 5D56056A
+P 9000 4900
+F 0 "J7" V 8966 4712 50  0000 R CNN
+F 1 "Conn_01x02" V 8875 4712 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9000 4900 50  0001 C CNN
+F 3 "~" H 9000 4900 50  0001 C CNN
+	1    9000 4900
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
