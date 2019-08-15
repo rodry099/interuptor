@@ -119,7 +119,7 @@ Connection ~ 5500 4800
 Wire Wire Line
 	5500 4800 5500 5050
 $Comp
-L HLK-PM01:HLK-PM01 U1
+L interruptorRev2-rescue:HLK-PM01-HLK-PM01 U1
 U 1 1 5CD1EF95
 P 3250 4950
 F 0 "U1" H 3250 5325 50  0000 C CNN
@@ -409,7 +409,7 @@ Wire Wire Line
 Wire Wire Line
 	2500 4750 2750 4750
 $Comp
-L pn2222a:PN2222A Q1
+L interruptorRev2-rescue:PN2222A-pn2222a Q1
 U 1 1 5CEFE5BD
 P 4500 3150
 F 0 "Q1" H 4691 3196 50  0000 L CNN
@@ -420,7 +420,7 @@ F 3 "http://www.fairchildsemi.com/ds/PN/PN2222A.pdf" H 4500 3150 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pn2222a:PN2222A Q2
+L interruptorRev2-rescue:PN2222A-pn2222a Q2
 U 1 1 5CEFE632
 P 6000 3150
 F 0 "Q2" H 6191 3196 50  0000 L CNN
@@ -432,7 +432,7 @@ F 3 "http://www.fairchildsemi.com/ds/PN/PN2222A.pdf" H 6000 3150 50  0001 L CNN
 $EndComp
 NoConn ~ 7700 5050
 $Comp
-L reles:JRC-21(4100) U4
+L interruptorRev2-rescue:JRC-21(4100)-reles U4
 U 1 1 5D07D34E
 P 4100 1550
 F 0 "U4" H 4125 1875 50  0000 C CNN
@@ -475,7 +475,7 @@ Wire Wire Line
 	3850 1200 3850 1450
 Connection ~ 4150 1200
 $Comp
-L reles:JRC-21(4100) U5
+L interruptorRev2-rescue:JRC-21(4100)-reles U5
 U 1 1 5D094505
 P 5550 1600
 F 0 "U5" H 5575 1925 50  0000 C CNN
