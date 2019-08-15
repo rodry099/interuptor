@@ -1,0 +1,155 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# C-device-termostato-rescue-interruptor-rescue
+#
+DEF C-device-termostato-rescue-interruptor-rescue C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "C-device-termostato-rescue-interruptor-rescue" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Conn_01x02_Female-RESCUE-termostato-termostato-rescue-interruptor-rescue
+#
+DEF Conn_01x02_Female-RESCUE-termostato-termostato-rescue-interruptor-rescue J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Conn_01x02_Female-RESCUE-termostato-termostato-rescue-interruptor-rescue" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_??x*mm*
+ Connector*:*1x??x*mm*
+ Socket?Strip?Straight?1X*
+ Socket?Strip?Angled?1X*
+$ENDFPLIST
+DRAW
+A 0 -100 20 901 -901 1 1 6 N 0 -80 0 -120
+A 0 0 20 901 -901 1 1 6 N 0 20 0 -20
+P 2 1 1 6 -50 -100 -20 -100 N
+P 2 1 1 6 -50 0 -20 0 N
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Conn_01x03_Female-RESCUE-termostato-termostato-rescue-interruptor-rescue
+#
+DEF Conn_01x03_Female-RESCUE-termostato-termostato-rescue-interruptor-rescue J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "Conn_01x03_Female-RESCUE-termostato-termostato-rescue-interruptor-rescue" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_??x*mm*
+ Connector*:*1x??x*mm*
+ Socket?Strip?Straight?1X*
+ Socket?Strip?Angled?1X*
+$ENDFPLIST
+DRAW
+A 0 -100 20 901 -901 1 1 6 N 0 -80 0 -120
+A 0 0 20 901 -901 1 1 6 N 0 20 0 -20
+A 0 100 20 901 -901 1 1 6 N 0 120 0 80
+P 2 1 1 6 -50 -100 -20 -100 N
+P 2 1 1 6 -50 0 -20 0 N
+P 2 1 1 6 -50 100 -20 100 N
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# ESP-07v2-RESCUE-termostato-termostato-rescue-interruptor-rescue
+#
+DEF ESP-07v2-RESCUE-termostato-termostato-rescue-interruptor-rescue U 0 40 Y Y 1 F N
+F0 "U" 0 -100 50 H V C CNN
+F1 "ESP-07v2-RESCUE-termostato-termostato-rescue-interruptor-rescue" 0 100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ ESP-07*
+ ESP-12*
+$ENDFPLIST
+DRAW
+S -600 -600 600 600 1 0 0 N
+X REST 1 -900 300 300 R 50 50 1 1 I
+X GPIO15 10 900 -300 300 L 50 50 1 1 B
+X GPIO2 11 900 -200 300 L 50 50 1 1 B
+X GPIO0 12 900 -100 300 L 50 50 1 1 B
+X GPIO4 13 900 0 300 L 50 50 1 1 B
+X GPIO5 14 900 100 300 L 50 50 1 1 B
+X RXD 15 900 200 300 L 50 50 1 1 I
+X TXD 16 900 300 300 L 50 50 1 1 O
+X ADC 2 -900 200 300 R 50 50 1 1 P
+X CH_PD 3 -900 100 300 R 50 50 1 1 I
+X GPIO16 4 -900 0 300 R 50 50 1 1 B
+X GPIO14 5 -900 -100 300 R 50 50 1 1 B
+X GPIO12 6 -900 -200 300 R 50 50 1 1 B
+X GPIO13 7 -900 -300 300 R 50 50 1 1 B
+X VCC 8 0 900 300 D 50 50 1 1 W
+X GND 9 0 -900 300 U 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# GND-RESCUE-termostato-termostato-rescue-interruptor-rescue
+#
+DEF GND-RESCUE-termostato-termostato-rescue-interruptor-rescue #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "GND-RESCUE-termostato-termostato-rescue-interruptor-rescue" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# LM1117-3.3-regul-termostato-rescue-interruptor-rescue
+#
+DEF LM1117-3.3-regul-termostato-rescue-interruptor-rescue U 0 10 Y Y 1 F N
+F0 "U" -150 125 50 H V C CNN
+F1 "LM1117-3.3-regul-termostato-rescue-interruptor-rescue" 0 125 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ SOT?223*
+ TO?263*
+ TO?252*
+ TO?220*
+$ENDFPLIST
+DRAW
+S -200 -200 200 75 0 1 10 f
+X GND 1 0 -300 100 U 50 50 1 1 W
+X VO 2 300 0 100 L 50 50 1 1 w
+X VI 3 -300 0 100 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# R-RESCUE-termostato-termostato-rescue-interruptor-rescue
+#
+DEF R-RESCUE-termostato-termostato-rescue-interruptor-rescue R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "R-RESCUE-termostato-termostato-rescue-interruptor-rescue" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
