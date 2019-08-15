@@ -23,3 +23,7 @@ _autosave-*
 *.tsv
 *.xml
 *.csv
+
+# Ficheros pcb
+
+gerbers
