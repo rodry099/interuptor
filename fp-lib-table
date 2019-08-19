@@ -5,4 +5,5 @@
   (lib (name optoacopladores)(type KiCad)(uri /media/Datos/Kicad_libs/optoacopladores.pretty)(options "")(descr ""))
   (lib (name relays)(type KiCad)(uri /media/Datos/Kicad_libs/MiLibreria/Fooprints/relays.pretty)(options "")(descr ""))
   (lib (name Acs712)(type KiCad)(uri /media/Datos/Kicad_libs/Acs712.pretty)(options "")(descr ""))
+  (lib (name Symbols)(type KiCad)(uri /media/Datos/Kicad_libs/MiLibreria/Symbols)(options "")(descr ""))
 )

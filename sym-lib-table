@@ -6,4 +6,6 @@
   (lib (name optoacopladores)(type Legacy)(uri /media/Datos/Kicad_libs/MiLibreria/Symbols/optoacopladores.lib)(options "")(descr ""))
   (lib (name pn2222a)(type Legacy)(uri /media/Datos/Kicad_libs/MiLibreria/Symbols/pn2222a.lib)(options "")(descr ""))
   (lib (name ACS712)(type Legacy)(uri /media/Datos/Kicad_libs/Acs712/ACS712.lib)(options "")(descr ""))
+  (lib (name hlk8021)(type Legacy)(uri /media/Datos/Kicad_libs/MiLibreria/Symbols/hlk8021.lib)(options "")(descr ""))
+  (lib (name espurna-h-eagle-import)(type Legacy)(uri /media/Datos/proyectosKicad/espurna-board/espurna-h/espurna-h-eagle-import.lib)(options "")(descr ""))
 )

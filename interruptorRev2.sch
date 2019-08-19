@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -221,8 +221,6 @@ F 3 "~" H 5800 3850 50  0001 C CNN
 	1    5800 3850
 	1    0    0    -1  
 $EndComp
-Text GLabel 5750 5250 0    50   Input ~ 0
-Relay_1
 Text GLabel 5500 5150 0    50   Input ~ 0
 Relay_2
 Text GLabel 4300 4150 3    50   Input ~ 0
@@ -230,7 +228,7 @@ Relay_1
 Wire Wire Line
 	4300 4000 4300 4150
 Wire Wire Line
-	5750 5250 5900 5250
+	5100 5250 5900 5250
 Wire Wire Line
 	5750 5350 5900 5350
 Text GLabel 5650 4100 0    50   Input ~ 0
@@ -297,8 +295,6 @@ Wire Wire Line
 	6100 2800 6100 2950
 Wire Wire Line
 	5800 2450 5800 2800
-Text GLabel 5750 5350 0    50   Input ~ 0
-int_1
 Connection ~ 6800 6050
 $Comp
 L interruptorRev2-rescue:ESP-07v2-RESCUE-termostato-termostato-rescue-interruptor-rescue U3
@@ -313,44 +309,10 @@ F 3 "" H 6800 5150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5500 5150 5900 5150
-$Comp
-L interruptorRev2-rescue:Conn_01x03_Female-RESCUE-termostato-termostato-rescue-interruptor-rescue J5
-U 1 1 5CDD1000
-P 4350 6000
-F 0 "J5" H 4350 6200 50  0000 C CNN
-F 1 "Int_1" H 4250 5800 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4350 6000 50  0001 C CNN
-F 3 "" H 4350 6000 50  0001 C CNN
-	1    4350 6000
-	0    -1   -1   0   
-$EndComp
-Text GLabel 4350 6550 3    50   Input ~ 0
-int_1
-Wire Wire Line
-	4350 6550 4350 6200
-$Comp
-L interruptorRev2-rescue:GND-RESCUE-termostato-termostato-rescue-interruptor-rescue #PWR?
-U 1 1 5CDD4154
-P 4450 6300
-F 0 "#PWR?" H 4450 6050 50  0001 C CNN
-F 1 "GND" H 4450 6150 50  0000 C CNN
-F 2 "" H 4450 6300 50  0001 C CNN
-F 3 "" H 4450 6300 50  0001 C CNN
-	1    4450 6300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4450 6300 4450 6200
-Text GLabel 5300 4600 1    50   Input ~ 0
-vcc
 Wire Wire Line
 	5300 4600 5300 4800
 Wire Wire Line
 	5300 4800 5500 4800
-Text GLabel 4250 6350 3    50   Input ~ 0
-vcc
-Wire Wire Line
-	4250 6350 4250 6200
 $Comp
 L interruptorRev2-rescue:GND-RESCUE-termostato-termostato-rescue-interruptor-rescue #PWR?
 U 1 1 5CDD4406
@@ -368,69 +330,12 @@ Wire Wire Line
 	9100 5100 9100 5250
 Wire Wire Line
 	9100 5250 9250 5250
-$Comp
-L interruptorRev2-rescue:Conn_01x03_Female-RESCUE-termostato-termostato-rescue-interruptor-rescue J6
-U 1 1 5CDD93D9
-P 5100 6000
-F 0 "J6" H 5100 6200 50  0000 C CNN
-F 1 "int_2" H 5000 5800 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5100 6000 50  0001 C CNN
-F 3 "" H 5100 6000 50  0001 C CNN
-	1    5100 6000
-	0    -1   -1   0   
-$EndComp
-Text GLabel 5100 6550 3    50   Input ~ 0
-int_2
 Wire Wire Line
-	5100 6550 5100 6200
-$Comp
-L interruptorRev2-rescue:GND-RESCUE-termostato-termostato-rescue-interruptor-rescue #PWR?
-U 1 1 5CDD93E1
-P 5200 6300
-F 0 "#PWR?" H 5200 6050 50  0001 C CNN
-F 1 "GND" H 5200 6150 50  0000 C CNN
-F 2 "" H 5200 6300 50  0001 C CNN
-F 3 "" H 5200 6300 50  0001 C CNN
-	1    5200 6300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5200 6300 5200 6200
-Text GLabel 5000 6350 3    50   Input ~ 0
-vcc
-Wire Wire Line
-	5000 6350 5000 6200
-Text GLabel 5650 5450 0    50   Input ~ 0
-int_2
-Wire Wire Line
-	5650 5450 5900 5450
+	5100 5450 5900 5450
 Wire Wire Line
 	7700 5250 9000 5250
 Wire Wire Line
 	2500 4750 2750 4750
-$Comp
-L interruptorRev2-rescue:PN2222A-pn2222a Q1
-U 1 1 5CEFE5BD
-P 4500 3150
-F 0 "Q1" H 4691 3196 50  0000 L CNN
-F 1 "PN2222A" H 4691 3105 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4700 3075 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/PN/PN2222A.pdf" H 4500 3150 50  0001 L CNN
-	1    4500 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L interruptorRev2-rescue:PN2222A-pn2222a Q2
-U 1 1 5CEFE632
-P 6000 3150
-F 0 "Q2" H 6191 3196 50  0000 L CNN
-F 1 "PN2222A" H 6191 3105 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 6200 3075 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/PN/PN2222A.pdf" H 6000 3150 50  0001 L CNN
-	1    6000 3150
-	1    0    0    -1  
-$EndComp
-NoConn ~ 7700 5050
 $Comp
 L interruptorRev2-rescue:JRC-21(4100)-reles U4
 U 1 1 5D07D34E
@@ -527,7 +432,7 @@ Wire Wire Line
 Wire Wire Line
 	5150 1800 5150 2450
 Text GLabel 3950 4750 2    50   Input ~ 0
-vcc
+VCC
 $Comp
 L Connector_Generic:Conn_01x04 J2
 U 1 1 5D55AD53
@@ -555,4 +460,44 @@ F 3 "~" H 9000 4900 50  0001 C CNN
 	1    9000 4900
 	0    -1   -1   0   
 $EndComp
+$Sheet
+S 8150 850  2000 1050
+U 5D5B915E
+F0 "Sheet5D5B915D" 50
+F1 "file5D5B915D.sch" 50
+$EndSheet
+$Comp
+L Transistor_FET:2N7002 Q1
+U 1 1 5D5D3125
+P 4500 3150
+F 0 "Q1" H 4705 3196 50  0000 L CNN
+F 1 "2N7002" H 4705 3105 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4700 3075 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 4500 3150 50  0001 L CNN
+	1    4500 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q2
+U 1 1 5D5D31D0
+P 6000 3150
+F 0 "Q2" H 6205 3196 50  0000 L CNN
+F 1 "2N7002" H 6205 3105 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6200 3075 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 6000 3150 50  0001 L CNN
+	1    6000 3150
+	1    0    0    -1  
+$EndComp
+Text GLabel 5750 5350 0    50   Input ~ 0
+Relay_1
+Text GLabel 5100 5250 0    50   Input ~ 0
+GPIO14
+Text GLabel 5100 5450 0    50   Input ~ 0
+GPIO13
+Wire Wire Line
+	7700 5050 8150 5050
+Text GLabel 8150 5050 2    50   Input ~ 0
+GPIO5
+Text GLabel 5300 4600 1    50   Input ~ 0
+VCC
 $EndSCHEMATC
