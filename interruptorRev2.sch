@@ -14,17 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L interruptorRev2-rescue:Conn_01x02_Female-RESCUE-termostato-termostato-rescue-interruptor-rescue J1
-U 1 1 5A3E8B13
-P 2300 5000
-F 0 "J1" H 2300 5100 50  0000 C CNN
-F 1 "220v" H 2300 4800 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2300 5000 50  0001 C CNN
-F 3 "" H 2300 5000 50  0001 C CNN
-	1    2300 5000
-	-1   0    0    1   
-$EndComp
 NoConn ~ 5900 4850
 NoConn ~ 5900 4950
 Wire Wire Line
@@ -72,7 +61,7 @@ U 1 1 5A3E9C05
 P 7800 4650
 F 0 "R3" V 7880 4650 50  0000 C CNN
 F 1 "180" V 7800 4650 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7730 4650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7730 4650 50  0001 C CNN
 F 3 "" H 7800 4650 50  0001 C CNN
 	1    7800 4650
 	1    0    0    -1  
@@ -87,7 +76,7 @@ U 1 1 5A887C56
 P 7700 5750
 F 0 "R2" V 7780 5750 50  0000 C CNN
 F 1 "10K" V 7700 5750 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7630 5750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7630 5750 50  0001 C CNN
 F 3 "" H 7700 5750 50  0001 C CNN
 	1    7700 5750
 	1    0    0    -1  
@@ -104,7 +93,7 @@ U 1 1 5A8DA6B8
 P 5700 5050
 F 0 "R1" V 5780 5050 50  0000 C CNN
 F 1 "10K" V 5700 5050 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5630 5050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5630 5050 50  0001 C CNN
 F 3 "" H 5700 5050 50  0001 C CNN
 	1    5700 5050
 	0    1    1    0   
@@ -135,11 +124,7 @@ F 8 "Unavailable" H 3250 4950 50  0001 L BNN "Field8"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2500 4900 2500 4750
-Wire Wire Line
-	2500 5000 2500 5150
-Wire Wire Line
-	2500 5150 2750 5150
+	2350 5150 2750 5150
 Wire Wire Line
 	3750 5150 3750 5300
 Connection ~ 3750 4750
@@ -165,42 +150,18 @@ F 3 "" H 6200 3750 50  0001 C CNN
 	1    6200 3750
 	1    0    0    -1  
 $EndComp
-$Comp
-L pspice:DIODE D1
-U 1 1 5CD2F6F3
-P 4150 2150
-F 0 "D1" H 4150 2000 50  0000 C CNN
-F 1 "DIODE" H 4150 2300 50  0000 C CNN
-F 2 "Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4150 2150 50  0001 C CNN
-F 3 "~" H 4150 2150 50  0001 C CNN
-	1    4150 2150
-	-1   0    0    1   
-$EndComp
-$Comp
-L pspice:DIODE D2
-U 1 1 5CD326D9
-P 5600 2450
-F 0 "D2" H 5600 2185 50  0000 C CNN
-F 1 "DIODE" H 5600 2276 50  0000 C CNN
-F 2 "Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5600 2450 50  0001 C CNN
-F 3 "~" H 5600 2450 50  0001 C CNN
-	1    5600 2450
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	3750 2550 5400 2550
 Wire Wire Line
 	5400 2550 5400 2450
 Connection ~ 3750 2550
-Wire Wire Line
-	4350 2150 4400 2150
 $Comp
 L Device:R R4
 U 1 1 5CD4C084
 P 4300 3850
 F 0 "R4" H 4370 3896 50  0000 L CNN
 F 1 "180" H 4370 3805 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4230 3850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4230 3850 50  0001 C CNN
 F 3 "~" H 4300 3850 50  0001 C CNN
 	1    4300 3850
 	1    0    0    -1  
@@ -216,7 +177,7 @@ U 1 1 5CD5127A
 P 5800 3850
 F 0 "R5" H 5870 3896 50  0000 L CNN
 F 1 "180" H 5870 3805 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5730 3850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5730 3850 50  0001 C CNN
 F 3 "~" H 5800 3850 50  0001 C CNN
 	1    5800 3850
 	1    0    0    -1  
@@ -237,28 +198,6 @@ NoConn ~ 7700 5150
 NoConn ~ 7700 5350
 Wire Wire Line
 	3750 4750 3950 4750
-$Comp
-L Connector:Screw_Terminal_01x03 J3
-U 1 1 5CD5F5C6
-P 4150 900
-F 0 "J3" V 4116 712 50  0000 R CNN
-F 1 "Screw_Terminal_01x03" V 4025 712 50  0000 R CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 4150 900 50  0001 C CNN
-F 3 "~" H 4150 900 50  0001 C CNN
-	1    4150 900 
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:Screw_Terminal_01x03 J4
-U 1 1 5CD62DF4
-P 5550 900
-F 0 "J4" V 5516 712 50  0000 R CNN
-F 1 "Screw_Terminal_01x03" V 5425 712 50  0000 R CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 5550 900 50  0001 C CNN
-F 3 "~" H 5550 900 50  0001 C CNN
-	1    5550 900 
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	7000 4100 7000 4500
 Wire Wire Line
@@ -335,7 +274,7 @@ Wire Wire Line
 Wire Wire Line
 	7700 5250 9000 5250
 Wire Wire Line
-	2500 4750 2750 4750
+	2350 4750 2750 4750
 $Comp
 L interruptorRev2-rescue:JRC-21(4100)-reles U4
 U 1 1 5D07D34E
@@ -355,30 +294,18 @@ Wire Wire Line
 	4500 2150 4400 2150
 Wire Wire Line
 	4500 1750 4500 2150
-Connection ~ 4400 2150
 Wire Wire Line
 	4600 1100 4600 1850
 Wire Wire Line
 	4600 1850 4400 1850
 Wire Wire Line
-	4250 1100 4600 1100
+	4150 1100 4600 1100
 Wire Wire Line
 	3700 1100 3700 1850
 Wire Wire Line
 	3700 1850 3850 1850
 Wire Wire Line
 	3700 1100 4050 1100
-Wire Wire Line
-	4150 1100 4150 1200
-Wire Wire Line
-	4150 1200 4400 1200
-Wire Wire Line
-	4400 1200 4400 1450
-Wire Wire Line
-	4150 1200 3850 1200
-Wire Wire Line
-	3850 1200 3850 1450
-Connection ~ 4150 1200
 $Comp
 L interruptorRev2-rescue:JRC-21(4100)-reles U5
 U 1 1 5D094505
@@ -394,14 +321,12 @@ Wire Wire Line
 	5300 1800 5150 1800
 Wire Wire Line
 	5150 2450 5400 2450
-Connection ~ 5400 2450
 Wire Wire Line
 	5850 1800 5950 1800
 Wire Wire Line
 	5950 1800 5950 2450
 Wire Wire Line
 	5950 2450 5800 2450
-Connection ~ 5800 2450
 Wire Wire Line
 	5450 1100 5250 1100
 Wire Wire Line
@@ -409,22 +334,11 @@ Wire Wire Line
 Wire Wire Line
 	5250 1900 5300 1900
 Wire Wire Line
-	5650 1100 5900 1100
+	5550 1100 5900 1100
 Wire Wire Line
 	5900 1100 5900 1900
 Wire Wire Line
 	5900 1900 5850 1900
-Wire Wire Line
-	5300 1500 5300 1200
-Wire Wire Line
-	5300 1200 5550 1200
-Wire Wire Line
-	5550 1200 5550 1100
-Wire Wire Line
-	5850 1500 5850 1200
-Wire Wire Line
-	5850 1200 5550 1200
-Connection ~ 5550 1200
 Wire Wire Line
 	3750 2550 3750 4750
 Wire Wire Line
@@ -461,7 +375,7 @@ F 3 "~" H 9000 4900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Sheet
-S 8150 850  2000 1050
+S 12600 100  2000 1050
 U 5D5B915E
 F0 "Sheet5D5B915D" 50
 F1 "file5D5B915D.sch" 50
@@ -500,4 +414,83 @@ Text GLabel 8150 5050 2    50   Input ~ 0
 GPIO5
 Text GLabel 5300 4600 1    50   Input ~ 0
 VCC
+$Comp
+L Diode:1N4148 D1
+U 1 1 5D5C40DC
+P 4100 2150
+F 0 "D1" H 4100 2366 50  0000 C CNN
+F 1 "1N4148" H 4100 2275 50  0000 C CNN
+F 2 "espurna-h:SOD80" H 4100 1975 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 4100 2150 50  0001 C CNN
+	1    4100 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2150 4400 2150
+Connection ~ 4400 2150
+$Comp
+L Diode:1N4148 D2
+U 1 1 5D5C9A7E
+P 5600 2450
+F 0 "D2" H 5600 2666 50  0000 C CNN
+F 1 "1N4148" H 5600 2575 50  0000 C CNN
+F 2 "espurna-h:SOD80" H 5600 2275 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 5600 2450 50  0001 C CNN
+	1    5600 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 2450 5450 2450
+Connection ~ 5400 2450
+Wire Wire Line
+	5750 2450 5800 2450
+Connection ~ 5800 2450
+Text GLabel 1650 4200 2    50   Input ~ 0
+NEUTRAL
+Text GLabel 2350 5150 0    50   Input ~ 0
+NEUTRAL
+Text GLabel 1650 4100 2    50   Input ~ 0
+LINE_I
+Text GLabel 2350 4750 0    50   Input ~ 0
+LINE_I
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 5D5EA3D7
+P 1450 4200
+F 0 "J1" H 1370 3875 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 1370 3966 50  0000 C CNN
+F 2 "" H 1450 4200 50  0001 C CNN
+F 3 "~" H 1450 4200 50  0001 C CNN
+	1    1450 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J3
+U 1 1 5D5EA93C
+P 4050 900
+F 0 "J3" V 4016 712 50  0000 R CNN
+F 1 "Screw_Terminal_01x02" V 3925 712 50  0000 R CNN
+F 2 "" H 4050 900 50  0001 C CNN
+F 3 "~" H 4050 900 50  0001 C CNN
+	1    4050 900 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J4
+U 1 1 5D5ECB90
+P 5450 900
+F 0 "J4" V 5416 712 50  0000 R CNN
+F 1 "Screw_Terminal_01x02" V 5325 712 50  0000 R CNN
+F 2 "" H 5450 900 50  0001 C CNN
+F 3 "~" H 5450 900 50  0001 C CNN
+	1    5450 900 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3850 1450 3350 1450
+Text GLabel 3350 1450 0    50   Input ~ 0
+LINE_L
+NoConn ~ 4400 1450
+NoConn ~ 5300 1500
+NoConn ~ 5850 1500
 $EndSCHEMATC
