@@ -43,12 +43,12 @@ Wire Wire Line
 $Comp
 L interruptorRev2-rescue:GND-RESCUE-termostato-termostato-rescue-interruptor-rescue #PWR?
 U 1 1 5A3E97AE
-P 3800 3700
-F 0 "#PWR?" H 3800 3450 50  0001 C CNN
-F 1 "GND" H 3800 3550 50  0000 C CNN
-F 2 "" H 3800 3700 50  0001 C CNN
-F 3 "" H 3800 3700 50  0001 C CNN
-	1    3800 3700
+P 2950 3600
+F 0 "#PWR?" H 2950 3350 50  0001 C CNN
+F 1 "GND" H 2950 3450 50  0000 C CNN
+F 2 "" H 2950 3600 50  0001 C CNN
+F 3 "" H 2950 3600 50  0001 C CNN
+	1    2950 3600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -86,23 +86,23 @@ Wire Wire Line
 $Comp
 L interruptorRev2-rescue:HLK-PM01-HLK-PM01 U1
 U 1 1 5CD1EF95
-P 3300 3350
-F 0 "U1" H 3300 3725 50  0000 C CNN
-F 1 "HLK-PM01" H 3300 3350 50  0001 L BNN
-F 2 "HLK-PM01:HLK-PM01" H 3300 3350 50  0001 L BNN
-F 3 "Hi-link" H 3300 3350 50  0001 L BNN
-F 4 "" H 3300 3350 50  0001 L BNN "Field4"
-F 5 "hlk-pm01" H 3300 3350 50  0001 L BNN "Field5"
-F 6 "None" H 3300 3350 50  0001 L BNN "Field6"
-F 7 "Package Analog Devices" H 3300 3350 50  0001 L BNN "Field7"
-F 8 "Unavailable" H 3300 3350 50  0001 L BNN "Field8"
-	1    3300 3350
+P 2450 3250
+F 0 "U1" H 2450 3625 50  0000 C CNN
+F 1 "HLK-PM01" H 2450 3250 50  0001 L BNN
+F 2 "HLK-PM01:HLK-PM01" H 2450 3250 50  0001 L BNN
+F 3 "Hi-link" H 2450 3250 50  0001 L BNN
+F 4 "" H 2450 3250 50  0001 L BNN "Field4"
+F 5 "hlk-pm01" H 2450 3250 50  0001 L BNN "Field5"
+F 6 "None" H 2450 3250 50  0001 L BNN "Field6"
+F 7 "Package Analog Devices" H 2450 3250 50  0001 L BNN "Field7"
+F 8 "Unavailable" H 2450 3250 50  0001 L BNN "Field8"
+	1    2450 3250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2400 3550 2800 3550
+	1550 3450 1950 3450
 Wire Wire Line
-	3800 3550 3800 3700
+	2950 3450 2950 3600
 Text GLabel 5550 3550 0    50   Input ~ 0
 Relay_2
 Wire Wire Line
@@ -112,7 +112,7 @@ Wire Wire Line
 NoConn ~ 7750 3550
 NoConn ~ 7750 3750
 Wire Wire Line
-	3800 3150 4000 3150
+	2950 3050 3150 3050
 Connection ~ 6850 4450
 $Comp
 L interruptorRev2-rescue:ESP-07v2-RESCUE-termostato-termostato-rescue-interruptor-rescue U3
@@ -149,9 +149,7 @@ Wire Wire Line
 Wire Wire Line
 	7750 3650 9050 3650
 Wire Wire Line
-	2400 3150 2800 3150
-Text GLabel 4000 3150 2    50   Input ~ 0
-VCC
+	1550 3050 1950 3050
 $Comp
 L Connector_Generic:Conn_01x04 J2
 U 1 1 5D55AD53
@@ -192,15 +190,13 @@ Wire Wire Line
 	7750 3450 8200 3450
 Text GLabel 8200 3450 2    50   Input ~ 0
 GPIO5
-Text GLabel 6850 2550 1    50   Input ~ 0
-VCC
 Text GLabel 2200 2100 2    50   Input ~ 0
 NEUTRAL
-Text GLabel 2400 3550 0    50   Input ~ 0
+Text GLabel 1550 3450 0    50   Input ~ 0
 NEUTRAL
 Text GLabel 2200 2000 2    50   Input ~ 0
 LINE_I
-Text GLabel 2400 3150 0    50   Input ~ 0
+Text GLabel 1550 3050 0    50   Input ~ 0
 LINE_I
 $Comp
 L Connector:Screw_Terminal_01x02 J1
@@ -223,17 +219,90 @@ Text GLabel 4350 2050 3    50   Input ~ 0
 RX
 Wire Wire Line
 	5550 2650 6850 2650
-Wire Wire Line
-	6850 2550 6850 2650
 Connection ~ 6850 2650
 Wire Wire Line
 	5550 2650 5550 3450
-Text GLabel 4150 2050 3    50   Input ~ 0
-VCC
 $Sheet
 S 12650 1450 1950 1050
 U 5D5DE8A1
 F0 "Relays" 79
 F1 "file5D5DE8A0.sch" 79
 $EndSheet
+Text GLabel 3150 3050 2    50   Input ~ 0
+VCC
+$Comp
+L Regulator_Linear:LM1117-3.3 U?
+U 1 1 5D5D81BE
+P 4150 3100
+F 0 "U?" H 4150 3342 50  0000 C CNN
+F 1 "LM1117-3.3" H 4150 3251 50  0000 C CNN
+F 2 "" H 4150 3100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 4150 3100 50  0001 C CNN
+	1    4150 3100
+	1    0    0    -1  
+$EndComp
+Text GLabel 3800 3100 0    50   Input ~ 0
+VCC
+Wire Wire Line
+	3800 3100 3850 3100
+$Comp
+L Device:C C?
+U 1 1 5D5D882E
+P 3850 3450
+F 0 "C?" H 3965 3496 50  0000 L CNN
+F 1 "C" H 3965 3405 50  0000 L CNN
+F 2 "" H 3888 3300 50  0001 C CNN
+F 3 "~" H 3850 3450 50  0001 C CNN
+	1    3850 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 3100 3850 3300
+Connection ~ 3850 3100
+Wire Wire Line
+	3850 3600 4150 3600
+Wire Wire Line
+	4150 3600 4150 3400
+$Comp
+L interruptorRev2-rescue:GND-RESCUE-termostato-termostato-rescue-interruptor-rescue #PWR?
+U 1 1 5D5D8EDD
+P 4150 3750
+F 0 "#PWR?" H 4150 3500 50  0001 C CNN
+F 1 "GND" H 4150 3600 50  0000 C CNN
+F 2 "" H 4150 3750 50  0001 C CNN
+F 3 "" H 4150 3750 50  0001 C CNN
+	1    4150 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 3600 4150 3750
+Connection ~ 4150 3600
+$Comp
+L Device:C C?
+U 1 1 5D5D928D
+P 4450 3450
+F 0 "C?" H 4565 3496 50  0000 L CNN
+F 1 "C" H 4565 3405 50  0000 L CNN
+F 2 "" H 4488 3300 50  0001 C CNN
+F 3 "~" H 4450 3450 50  0001 C CNN
+	1    4450 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3100 4450 3300
+Wire Wire Line
+	4450 3600 4150 3600
+Text GLabel 4750 3100 2    50   Input ~ 0
+3V3
+Wire Wire Line
+	4450 3100 4750 3100
+Connection ~ 4450 3100
+Text GLabel 6850 2350 1    50   Input ~ 0
+3V3
+Wire Wire Line
+	6850 2350 6850 2650
+Text GLabel 4150 2150 3    50   Input ~ 0
+3V3
+Wire Wire Line
+	4150 2150 4150 2050
 $EndSCHEMATC

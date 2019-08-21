@@ -15,9 +15,11 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L espurna-h-eagle-import:HLW8012 U2
+L interruptorRev2-rescue:HLW8012-espurna-h-eagle-import U2
 U 1 1 5D5B91CD
 P 6000 2800
+AR Path="/5D5B91CD" Ref="U2"  Part="1" 
+AR Path="/5D5B915E/5D5B91CD" Ref="U2"  Part="1" 
 F 0 "U2" H 6000 3286 59  0000 C CNN
 F 1 "HLW8012" H 6000 3181 59  0000 C CNN
 F 2 "espurna-h:SOP8" H 6000 2800 50  0001 C CNN

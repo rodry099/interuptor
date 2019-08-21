@@ -273,9 +273,9 @@ LINE_L
 NoConn ~ 5150 2050
 NoConn ~ 6050 2100
 NoConn ~ 6600 2100
-Text GLabel 4250 3150 0    50   Input ~ 0
-VCC
 Wire Wire Line
 	4250 3150 4500 3150
 Connection ~ 4500 3150
+Text GLabel 4250 3150 0    50   Input ~ 0
+3V3
 $EndSCHEMATC
