@@ -4,9 +4,9 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
-Title ""
-Date ""
+Sheet 2 3
+Title "voltage sensor"
+Date "2019-08-21"
 Rev ""
 Comp ""
 Comment1 ""
